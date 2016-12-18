@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UA</title>
+</head>
+<body>
+	<h3 id="con1"></h3>
+	<h3 id="con2"></h3>
+	<script>
+	var con1 = document.getElementById("con1");
+	var con2 = document.getElementById("con2");
+	var UA = window.navigator.userAgent;
+	var n1 = window.navigator.appCodeName;
+	var n2 = window.navigator.appName;
+	var n3 = window.navigator.appVersion;
+	var n4 = window.navigator.product;
+	con1.innerHTML = UA;
+	con2.innerHTML = n1+'#'+n2+'#'+n3+'#'+n4;
+	console.dir(window.navigator)
+	</script>
+</body>
+</html>
